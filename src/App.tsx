@@ -1,6 +1,55 @@
+import { useEffect } from 'react'
 import './App.css'
 
 function App() {
+  useEffect(() => {
+    const handleContextMenu = (e: MouseEvent) => {
+      e.preventDefault();
+      const popup = document.createElement('div');
+      popup.className = 'copyright-popup';
+      popup.textContent = 'Autobv.nl © 2025';
+      document.body.appendChild(popup);
+
+      // Position popup near cursor
+      popup.style.left = `${e.pageX}px`;
+      popup.style.top = `${e.pageY}px`;
+
+      // Remove popup after animation
+      setTimeout(() => {
+        popup.classList.add('fade-out');
+        setTimeout(() => {
+          document.body.removeChild(popup);
+        }, 300);
+      }, 1500);
+    };
+
+    const preventCopy = (e: ClipboardEvent) => {
+      e.preventDefault();
+    };
+
+    const preventSave = (e: KeyboardEvent) => {
+      if (e.key === 's' && (e.ctrlKey || e.metaKey)) {
+        e.preventDefault();
+      }
+    };
+
+    // Add event listeners
+    document.addEventListener('contextmenu', handleContextMenu);
+    document.addEventListener('copy', preventCopy);
+    document.addEventListener('keydown', preventSave);
+    document.addEventListener('dragstart', (e) => e.preventDefault());
+    document.addEventListener('selectstart', (e) => e.preventDefault());
+
+    // Cleanup
+    return () => {
+      document.removeEventListener('contextmenu', handleContextMenu);
+      document.removeEventListener('copy', preventCopy);
+      document.removeEventListener('keydown', preventSave);
+      document.removeEventListener('dragstart', (e) => e.preventDefault());
+      document.removeEventListener('selectstart', (e) => e.preventDefault());
+    };
+  }, []);
+
   return (
     <div className="landing-page">
       {/* Header */}
