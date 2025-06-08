@@ -1,0 +1,15 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<linearGradient id="faviconGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+<stop offset="0%" style="stop-color:#4C1D95;stop-opacity:1" />
+<stop offset="100%" style="stop-color:#0F766E;stop-opacity:1" />
+</linearGradient>
+</defs>
+<!-- Simplified truck for favicon -->
+<rect x="2" y="12" width="10" height="8" fill="url(#faviconGradient)" rx="1"/>
+<rect x="12" y="14" width="16" height="6" fill="url(#faviconGradient)" rx="1"/>
+<circle cx="6" cy="22" r="2" fill="#1F2937"/>
+<circle cx="24" cy="22" r="2" fill="#1F2937"/>
+<ellipse cx="22" cy="16" rx="4" ry="2" fill="#0F766E"/>
+<path d="M12 18L14 16L16 18" fill="#28A745"/>
+</svg> 
