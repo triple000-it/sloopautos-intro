@@ -39,7 +39,7 @@ function App() {
         <div className="container">
           
           <p className="hero-subtitle">
-            Uw betrouwbare partner
+            
           </p>
           
 
@@ -47,8 +47,7 @@ function App() {
       <section className="services">
         <div className="container">
           <div className="service-cards">
-            <div className="service-card inkoop">
-              
+            <a href="https://www.inkoop.autos/nl" target="_blank" rel="noopener noreferrer" className="service-card inkoop">
               <h2>Inkoop</h2>
               <p>Wij kopen uw oude auto tegen de beste prijs. Snelle afhandeling en gratis ophaalservice.</p>
               <ul>
@@ -58,12 +57,11 @@ function App() {
                 <li>● Alle merken en modellen</li>
               </ul>
               <div className="service-image">
-                <div className="placeholder-image">Ga verder</div>
+                <button className="cta-button">Ga verder</button>
               </div>
-            </div>
+            </a>
 
-            <div className="service-card verkoop">
-              
+            <a href="https://www.verkoop.autos/" target="_blank" rel="noopener noreferrer" className="service-card verkoop">
               <h2>Verkoop</h2>
               <p>Hoogwaardige gebruikte onderdelen en complete voertuigen tegen scherpe prijzen.</p>
               <ul>
@@ -73,9 +71,9 @@ function App() {
                 <li>● Concurrerende prijzen</li>
               </ul>
               <div className="service-image">
-                <div className="placeholder-image">Ga verder</div>
+                <button className="cta-button">Ga verder</button>
               </div>
-            </div>
+            </a>
           </div>
         </div>
       </section>
