@@ -100,14 +100,14 @@ body {
   object-fit: contain;
 }
 
-.logo-text h1 {
+.header .logo-text h1 {
   font-size: clamp(1.5rem, 4vw, 2rem);
   font-weight: 700;
-  color: #2c3e50;
+  color: #383838;
   margin-bottom: 0.2rem;
 }
 
-.logo-text p {
+.header .logo-text p {
   font-size: clamp(0.8rem, 2vw, 1rem);
   color: #6c757d;
   font-weight: 500;
@@ -125,6 +125,61 @@ body {
   font-size: clamp(0.9rem, 2vw, 1rem);
 }
 
+.whatsapp-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0.5rem 1rem;
+  background-color: #2c5765;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.whatsapp-button svg {
+  flex-shrink: 0;
+}
+
+.whatsapp-button:hover {
+  background-color: white;
+  color: #2c5765;
+  box-shadow: 0 2px 8px rgba(44, 87, 101, 0.2);
+}
+
+.whatsapp-button span {
+  color: inherit;
+}
+
+.email-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0.5rem 1rem;
+  background-color: white;
+  color: #2c5765;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  border: 1px solid #2c5765;
+}
+
+.email-button svg {
+  flex-shrink: 0;
+}
+
+.email-button:hover {
+  background-color: #2c5765;
+  color: white;
+  box-shadow: 0 2px 8px rgba(44, 87, 101, 0.2);
+}
+
+.email-button span {
+  color: inherit;
+}
+
 .phone {
   color: #28a745;
 }
@@ -136,7 +191,7 @@ body {
 /* Hero Section */
 .hero {
   background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
-  padding: clamp(3rem, 8vw, 6rem) 0;
+  padding: clamp(1rem, 3vw, 2rem) 0;
   text-align: center;
   width: 100vw;
   position: relative;
@@ -144,7 +199,7 @@ body {
   right: 50%;
   margin-left: -50vw;
   margin-right: -50vw;
-  min-height: 80vh;
+  min-height: 60vh;
   display: flex;
   align-items: center;
 }
@@ -194,10 +249,10 @@ body {
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
 }
 
-.stat:nth-child(1) h3 { color: #28a745; }
-.stat:nth-child(2) h3 { color: #007bff; }
-.stat:nth-child(3) h3 { color: #6f42c1; }
-.stat:nth-child(4) h3 { color: #fd7e14; }
+.stat:nth-child(1) h3 { color: #3c2774; }
+.stat:nth-child(2) h3 { color: #3c2774; }
+.stat:nth-child(3) h3 { color: #2c5765; }
+.stat:nth-child(4) h3 { color: #2c5765; }
 
 .stat h3 {
   font-size: clamp(2rem, 5vw, 3rem);
@@ -213,8 +268,8 @@ body {
 
 /* Services Section */
 .services {
-  padding: clamp(4rem, 8vw, 6rem) 0;
-  background-color: #f8f9fa;
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+  padding: clamp(1rem, 3vw, 2rem) 0;
   width: 100vw;
   position: relative;
   left: 50%;
@@ -225,21 +280,28 @@ body {
 
 .service-cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
-  gap: clamp(2rem, 5vw, 4rem);
-  max-width: 1400px;
+  grid-template-columns: repeat(2, 620px);
+  gap: 0;
+  justify-content: center;
+  align-items: center;
+  max-width: 1240px;
   margin: 0 auto;
-  position: relative;
-  z-index: 2;
+  padding: 0;
+  width: 100%;
 }
 
 .service-card {
-  background: #ffffff;
-  border-radius: 25px;
-  padding: clamp(2rem, 4vw, 3rem);
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
-  border: 1px solid #e9ecef;
+  background: white;
+  border-radius: 20px;
+  padding: clamp(1.5rem, 3vw, 2rem);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 620px;
+  margin: 0;
+  text-align: center;
 }
 
 .service-card:hover {
@@ -248,62 +310,53 @@ body {
 }
 
 .service-card.inkoop {
-  border-top: 6px solid #28a745;
+  border-top: 6px solid #3c2774;
+  justify-self: end;
 }
 
 .service-card.verkoop {
-  border-top: 6px solid #007bff;
-}
-
-.service-icon {
-  font-size: clamp(2.5rem, 5vw, 3.5rem);
-  margin-bottom: 1.5rem;
-  padding: 1.2rem;
-  border-radius: 20px;
-  display: inline-block;
-}
-
-.inkoop .service-icon {
-  background-color: rgba(40, 167, 69, 0.1);
-}
-
-.verkoop .service-icon {
-  background-color: rgba(0, 123, 255, 0.1);
+  border-top: 6px solid #2c5765;
+  justify-self: start;
 }
 
 .service-card h2 {
-  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  font-size: clamp(1.5rem, 3vw, 2rem);
   font-weight: 700;
-  margin-bottom: 1.5rem;
-  color: #2c3e50;
+  margin-bottom: 1.2rem;
+  color: #383838;
+  text-align: center;
 }
 
 .service-card p {
-  color: #6c757d;
-  margin-bottom: 2rem;
-  font-size: clamp(1rem, 2.5vw, 1.2rem);
-  line-height: 1.8;
+  font-size: clamp(0.9rem, 2vw, 1rem);
+  color: #666;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+  text-align: center;
 }
 
 .service-card ul {
   list-style: none;
-  margin-bottom: 2.5rem;
+  margin-bottom: 1.5rem;
+  flex-grow: 1;
+  text-align: center;
+  padding: 0;
 }
 
 .service-card li {
-  color: #495057;
-  margin-bottom: 1rem;
-  font-weight: 500;
-  padding-left: 1.5rem;
-  font-size: clamp(0.95rem, 2vw, 1.1rem);
+  font-size: clamp(0.9rem, 2vw, 1rem);
+  margin-bottom: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .inkoop li {
-  color: #28a745;
+  color: #3c2774;
 }
 
 .verkoop li {
-  color: #007bff;
+  color: #2c5765;
 }
 
 .service-image {
@@ -311,14 +364,31 @@ body {
 }
 
 .placeholder-image {
-  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-  padding: clamp(2rem, 5vw, 4rem) 2rem;
-  border-radius: 15px;
+  background: #f8f9fa;
+  padding: 1rem;
+  border-radius: 10px;
   text-align: center;
-  font-size: clamp(1.2rem, 3vw, 1.8rem);
-  color: #6c757d;
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
+  color: #383838;
   font-weight: 600;
   border: 2px dashed #dee2e6;
+  margin-top: auto;
+}
+
+.service-icon {
+  font-size: clamp(2rem, 4vw, 2.5rem);
+  margin-bottom: 1.2rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.inkoop .service-icon {
+  color: #3c2774;
+}
+
+.verkoop .service-icon {
+  color: #2c5765;
 }
 
 /* Why Choose Us Section */
@@ -548,18 +618,24 @@ body {
   filter: brightness(0) invert(1);
 }
 
-.footer-logo span {
-  font-size: clamp(1.3rem, 3vw, 1.8rem);
+.footer .logo-text h1 {
+  font-size: clamp(1.5rem, 4vw, 2rem);
   font-weight: 700;
+  color: white;
+  margin-bottom: 0.2rem;
+}
+
+.footer .logo-text p {
+  font-size: clamp(0.8rem, 2vw, 1rem);
+  color: white;
+  font-weight: 500;
 }
 
 .footer > p {
-  color: #bdc3c7;
-  margin-bottom: 3rem;
-  font-size: clamp(1rem, 2.5vw, 1.2rem);
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
+  font-size: clamp(0.9rem, 2vw, 1.1rem);
+  color: white;
+  margin: 1rem 0 2rem;
+  text-align: center;
 }
 
 .footer-bottom {
@@ -569,8 +645,10 @@ body {
 }
 
 .footer-bottom p {
-  color: #95a5a6;
-  font-size: clamp(0.9rem, 2vw, 1rem);
+  font-size: clamp(0.8rem, 1.8vw, 0.9rem);
+  color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  margin: 0;
 }
 
 /* Ultra-wide and very large screen optimizations */
@@ -742,8 +820,8 @@ body {
   }
   
   .hero {
-    min-height: 70vh;
-    padding: clamp(2rem, 6vw, 4rem) 0;
+    padding: 0.5rem 0;
+    min-height: 40vh;
   }
   
   .hero-title {
@@ -810,8 +888,8 @@ body {
   }
   
   .hero {
-    min-height: 60vh;
-    padding: clamp(2rem, 8vw, 3rem) 0;
+    padding: 0.5rem 0;
+    min-height: 40vh;
   }
   
   .hero-title {
@@ -893,6 +971,17 @@ body {
     text-align: center;
   }
   
+  .whatsapp-button {
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 0.5rem;
+  }
+  
+  .email-button {
+    width: 100%;
+    justify-content: center;
+  }
+  
   .logo-text h1 {
     font-size: clamp(1.3rem, 6vw, 1.6rem);
   }
@@ -915,8 +1004,8 @@ body {
   }
   
   .hero {
-    min-height: 60vh;
-    padding: clamp(2rem, 8vw, 3rem) 0;
+    padding: 0.5rem 0;
+    min-height: 40vh;
   }
   
   .hero-title {
@@ -1083,8 +1172,8 @@ body {
   }
   
   .hero {
-    min-height: 50vh;
-    padding: 1.5rem 0;
+    padding: 0.5rem 0;
+    min-height: 40vh;
   }
   
   .hero-title {
@@ -1409,5 +1498,46 @@ body {
   .contact-icon {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/* Update media queries for better responsiveness */
+@media (max-width: 992px) {
+  .service-cards {
+    grid-template-columns: 800px;
+    max-width: 800px;
+    padding: 0 1rem;
+  }
+
+  .service-card {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    justify-self: center;
+  }
+
+  .service-card.inkoop,
+  .service-card.verkoop {
+    justify-self: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .service-cards {
+    padding: 1rem 0;
+  }
+
+  .service-card {
+    padding: 1.2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .service-cards {
+    padding: 0 clamp(0.8rem, 2vw, 1.5rem);
+  }
+
+  .service-card {
+    padding: 1rem;
   }
 }
