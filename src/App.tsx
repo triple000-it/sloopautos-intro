@@ -13,7 +13,7 @@ function App() {
               </div>
               <div className="logo-text">
                 <h1>Sloopautos.online</h1>
-                <p>Professionele Autodemontage</p>
+                <p>Professionele handel in schade- en sloopauto's</p>
               </div>
             </div>
           </div>
