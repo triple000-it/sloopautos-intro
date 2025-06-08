@@ -92,11 +92,6 @@ body {
   justify-content: center;
   width: 60px;
   height: 60px;
-  background-color: #ffffff;
-  padding: 0.5rem;
-  border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  border: 2px solid #e9ecef;
 }
 
 .logo-icon img {
@@ -542,18 +537,15 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 50px;
-  height: 50px;
-  background-color: #ffffff;
-  padding: 0.4rem;
-  border-radius: 10px;
-  border: 2px solid #495057;
+  width: 70px;
+  height: 70px;
 }
 
 .footer-logo .logo-icon img {
   width: 100%;
   height: 100%;
   object-fit: contain;
+  filter: brightness(0) invert(1);
 }
 
 .footer-logo span {
@@ -1037,8 +1029,8 @@ body {
   }
   
   .footer-logo .logo-icon {
-    width: 40px;
-    height: 40px;
+    width: 55px;
+    height: 55px;
   }
   
   .footer-logo span {
@@ -1075,7 +1067,6 @@ body {
   .logo-icon {
     width: 50px;
     height: 50px;
-    padding: 0.4rem;
   }
   
   .logo-text h1 {
@@ -1162,9 +1153,8 @@ body {
   }
   
   .footer-logo .logo-icon {
-    width: 35px;
-    height: 35px;
-    padding: 0.3rem;
+    width: 50px;
+    height: 50px;
   }
   
   .footer-logo span {
