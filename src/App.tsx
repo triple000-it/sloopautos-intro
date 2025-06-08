@@ -32,27 +32,7 @@ function App() {
             Uw betrouwbare partner voor professionele autodemontage en onderdelen
           </p>
           
-          {/* Statistics */}
-          <div className="stats">
-            <div className="stat">
-              <h3>1000+</h3>
-              <p>Auto's Gesloopt</p>
-            </div>
-            <div className="stat">
-              <h3>15+</h3>
-              <p>Jaar Ervaring</p>
-            </div>
-            <div className="stat">
-              <h3>24/7</h3>
-              <p>Service</p>
-            </div>
-            <div className="stat">
-              <h3>100%</h3>
-              <p>Milieuvriendelijk</p>
-            </div>
-          </div>
-        </div>
-      </section>
+          
 
       {/* Services Section */}
       <section className="services">
@@ -117,31 +97,29 @@ function App() {
         </div>
       </section>
 
-      {/* Contact Section */}
-      <section className="contact">
-        <div className="container">
-          <h2>Contact Opnemen</h2>
-          <p>Heeft u vragen of wilt u een afspraak maken? Neem gerust contact met ons op!</p>
-          
-          <div className="contact-cards">
-            <div className="contact-card">
-              <div className="contact-icon">📞</div>
-              <h3>Telefoon</h3>
-              <p>+31 123 456 789</p>
+      {/* Statistics */}
+      <div className="stats">
+            <div className="stat">
+              <h3>1000+</h3>
+              <p>Auto's Gesloopt</p>
             </div>
-            <div className="contact-card">
-              <div className="contact-icon">✉️</div>
-              <h3>Email</h3>
-              <p>info@sloopautos.online</p>
+            <div className="stat">
+              <h3>15+</h3>
+              <p>Jaar Ervaring</p>
             </div>
-            <div className="contact-card">
-              <div className="contact-icon">📍</div>
-              <h3>Locatie</h3>
-              <p>Nederland</p>
+            <div className="stat">
+              <h3>24/7</h3>
+              <p>Service</p>
+            </div>
+            <div className="stat">
+              <h3>100%</h3>
+              <p>Milieuvriendelijk</p>
             </div>
           </div>
         </div>
-      </section>
+      </section>ß
+
+      
 
       {/* Footer */}
       <footer className="footer">
