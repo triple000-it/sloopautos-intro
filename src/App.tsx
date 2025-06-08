@@ -98,12 +98,13 @@ function App() {
           <div className="service-cards">
             <a href="https://www.inkoop.autos/nl" target="_blank" rel="noopener noreferrer" className="service-card inkoop">
               <h2>Inkoop</h2>
-              <p>Wij kopen uw oude auto tegen de beste prijs. Snelle afhandeling en gratis ophaalservice.</p>
+              <p><b>Wij bieden een eerlijke prijs voor uw oude schade- of sloopauto.</b></p>
               <ul>
-                <li>● Gratis waardering en ophaling</li>
-                <li>● Milieuvriendelijke verwerking</li>
-                <li>● Directe uitbetaling mogelijk</li>
-                <li>● Alle merken en modellen</li>
+              <li>● Directe uitbetaling, contant of via bankoverschrijving</li>
+              <li>● Snelle afhandeling binnen 24 - 48 uur</li>
+              <li>● Gratis ophaalservice in Nederland</li>
+              <li>● Milieuvriendelijke recycling</li>
+              <li>● Alle merken en modellen</li>
               </ul>
               <div className="service-image">
                 <button className="cta-button">Ga verder</button>
@@ -112,12 +113,13 @@ function App() {
 
             <a href="https://www.verkoop.autos/" target="_blank" rel="noopener noreferrer" className="service-card verkoop">
               <h2>Verkoop</h2>
-              <p>Hoogwaardige gebruikte onderdelen en complete voertuigen tegen scherpe prijzen.</p>
+              <p><b>Bekijk ons schade- en sloopauto's overzicht in Nederland.</b></p>
               <ul>
-                <li>● Geteste kwaliteitsonderdelen</li>
-                <li>● Garantie op alle onderdelen</li>
-                <li>● Snelle levering mogelijk</li>
-                <li>● Concurrerende prijzen</li>
+              <li>● Bieden op een voertuig via de veiling of direct claimen</li>
+              <li>● Snelle afhendeling binnen 24 - 48 uur</li>
+              <li>● Altijd een actueel aanbod</li>
+              <li>● Lage commissies</li>
+              <li>● Echte leads</li>
               </ul>
               <div className="service-image">
                 <button className="cta-button">Ga verder</button>
