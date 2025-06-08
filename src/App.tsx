@@ -133,25 +133,10 @@ function App() {
 
       {/* Statistics */}
       <div className="stats">
-            <div className="stat">
-              <h3>500+</h3>
-              <p>Auto's gerecycled</p>
-            </div>
-            <div className="stat">
-              <h3>99%</h3>
-              <p>Milieuvriendelijk</p>
-            </div>
-            <div className="stat">
-              <h3>15+</h3>
-              <p>Jaar ervaring</p>
-            </div>
-            <div className="stat">
-              <h3>24/7</h3>
-              <p>Service</p>
-            </div>
+            
           </div>
         </div>
-      </section>ß
+      </section>
 
       
 
