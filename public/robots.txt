@@ -1,0 +1,9 @@
+# robots.txt for sloopautos.online
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://sloopautos.online/sitemap.xml
+
+# Rate limiting
+Crawl-delay: 1 
