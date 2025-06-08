@@ -85,7 +85,7 @@ function App() {
       {/* Statistics */}
       <div className="stats">
             <div className="stat">
-              <h3>1000+</h3>
+              <h3>500+</h3>
               <p>Auto's gerecycled</p>
             </div>
             <div className="stat">
@@ -120,7 +120,7 @@ function App() {
           </div>
           
           <div className="footer-bottom">
-            <p><b>Autobv.nl © 2025</b> <br></br> Alle rechten voorbehouden</p>
+            <p><b>Autobv.nl © 2025</b> <br></br> Alle rechten voorbehouden.</p>
           </div>
         </div>
       </footer>
