@@ -1734,3 +1734,7 @@ img {
     display: inline-flex;
   }
 }
+
+.footer-logo-white {
+  filter: brightness(0) invert(1);
+}
