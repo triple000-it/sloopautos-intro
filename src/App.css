@@ -115,8 +115,9 @@ body {
 
 .contact-info {
   display: flex;
-  gap: 2rem;
+  gap: 1.5rem;
   flex-wrap: wrap;
+  align-items: center;
 }
 
 .contact-info span {
@@ -125,59 +126,30 @@ body {
   font-size: clamp(0.9rem, 2vw, 1rem);
 }
 
-.whatsapp-button {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  padding: 0.5rem 1rem;
-  background-color: #2c5765;
-  color: white;
-  text-decoration: none;
-  border-radius: 5px;
-  font-weight: 500;
-  transition: all 0.3s ease;
-}
-
-.whatsapp-button svg {
-  flex-shrink: 0;
-}
-
-.whatsapp-button:hover {
-  background-color: white;
-  color: #2c5765;
-  box-shadow: 0 2px 8px rgba(44, 87, 101, 0.2);
-}
-
-.whatsapp-button span {
-  color: inherit;
-}
-
+.whatsapp-button,
 .email-button {
   display: inline-flex;
   align-items: center;
-  gap: 8px;
-  padding: 0.5rem 1rem;
-  background-color: white;
-  color: #3c2774;
-  text-decoration: none;
-  border-radius: 5px;
-  font-weight: 500;
+  justify-content: center;
+  padding: 0.5rem;
+  background-color: transparent;
+  border: none;
+  border-radius: 50%;
   transition: all 0.3s ease;
-  border: 1px solid #3c2774;
+  width: 40px;
+  height: 40px;
 }
 
-.email-button svg {
-  flex-shrink: 0;
-}
-
+.whatsapp-button:hover,
 .email-button:hover {
-  background-color: #3c2774;
-  color: white;
-  box-shadow: 0 2px 8px rgba(60, 39, 116, 0.2);
+  background-color: rgba(44, 87, 101, 0.1);
+  transform: scale(1.1);
 }
 
-.email-button span {
-  color: inherit;
+.whatsapp-button svg,
+.email-button svg {
+  width: 24px;
+  height: 24px;
 }
 
 .phone {
@@ -1014,15 +986,17 @@ footer {
     text-align: center;
   }
   
-  .whatsapp-button {
-    width: 100%;
-    justify-content: center;
-    margin-bottom: 0.5rem;
+  .whatsapp-button,
+  .email-button {
+    width: 32px;
+    height: 32px;
+    padding: 0.3rem;
   }
   
-  .email-button {
-    width: 100%;
-    justify-content: center;
+  .whatsapp-button svg,
+  .email-button svg {
+    width: 18px;
+    height: 18px;
   }
   
   .logo-text h1 {
@@ -1035,7 +1009,7 @@ footer {
   
   .contact-info {
     flex-direction: column;
-    gap: 0.8rem;
+    gap: 1rem;
     justify-content: center;
   }
   
@@ -1656,58 +1630,45 @@ img {
 }
 
 @media (max-width: 1024px) {
-  .whatsapp-button {
-    background-color: #2c5765;
-    color: #fff;
-    border: none;
-    box-shadow: none;
-    width: 50%;
-    min-width: 200px;
-    justify-content: center;
-    padding: 0.8rem 2rem;
-    font-size: 1rem;
-    font-weight: 500;
-    border-radius: 8px;
-  }
+  .whatsapp-button,
   .email-button {
-    background-color: #3c2774;
-    color: #fff;
-    border: none;
-    box-shadow: none;
-    width: 50%;
-    min-width: 200px;
-    justify-content: center;
-    padding: 0.8rem 2rem;
-    font-size: 1rem;
-    font-weight: 500;
-    border-radius: 8px;
+    width: 40px;
+    height: 40px;
+    padding: 0.5rem;
   }
 }
 
 @media (max-width: 768px) {
-  .whatsapp-button {
-    width: 80%;
-    min-width: unset;
-    padding: 0.7rem 1.5rem;
-    font-size: 0.9rem;
-  }
+  .whatsapp-button,
   .email-button {
-    width: 80%;
-    min-width: unset;
-    padding: 0.7rem 1.5rem;
-    font-size: 0.9rem;
+    width: 36px;
+    height: 36px;
+    padding: 0.4rem;
+  }
+  
+  .whatsapp-button svg,
+  .email-button svg {
+    width: 20px;
+    height: 20px;
   }
 }
 
 @media (max-width: 576px) {
-  .whatsapp-button {
-    width: 100%;
-    justify-content: center;
-    margin-bottom: 0.5rem;
+  .contact-info {
+    gap: 1rem;
   }
+  
+  .whatsapp-button,
   .email-button {
-    width: 100%;
-    justify-content: center;
+    width: 32px;
+    height: 32px;
+    padding: 0.3rem;
+  }
+  
+  .whatsapp-button svg,
+  .email-button svg {
+    width: 18px;
+    height: 18px;
   }
 }
 
