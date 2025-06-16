@@ -115,75 +115,77 @@ body {
 
 .contact-info {
   display: flex;
-  gap: 1rem;
+  gap: 2rem;
   flex-wrap: wrap;
 }
 
-.contact-button {
+.contact-info span {
+  color: #495057;
+  font-weight: 500;
+  font-size: clamp(0.9rem, 2vw, 1rem);
+}
+
+.whatsapp-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0.5rem 1rem;
   background-color: #2c5765;
   color: white;
   text-decoration: none;
-  border-radius: 8px;
+  border-radius: 5px;
   font-weight: 500;
   transition: all 0.3s ease;
-  padding: 0.8rem 2rem;
-  font-size: 1rem;
-  border: none;
-  cursor: pointer;
-  text-align: center;
-  width: 50%;
-  min-width: 200px;
 }
 
-.contact-button.whatsapp {
-  background-color: #2c5765;
+.whatsapp-button svg {
+  flex-shrink: 0;
 }
 
-.contact-button.email {
-  background-color: #3c2774;
-}
-
-.contact-button:hover {
+.whatsapp-button:hover {
   background-color: white;
+  color: #2c5765;
   box-shadow: 0 2px 8px rgba(44, 87, 101, 0.2);
 }
 
-.contact-button.whatsapp:hover {
-  color: #2c5765;
-  border: 1px solid #2c5765;
+.whatsapp-button span {
+  color: inherit;
 }
 
-.contact-button.email:hover {
+.email-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0.5rem 1rem;
+  background-color: white;
   color: #3c2774;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 500;
+  transition: all 0.3s ease;
   border: 1px solid #3c2774;
 }
 
-@media (max-width: 768px) {
-  .contact-button {
-    width: 80%;
-    min-width: unset;
-    padding: 0.7rem 1.5rem;
-    font-size: 0.9rem;
-  }
+.email-button svg {
+  flex-shrink: 0;
 }
 
-@media (max-width: 576px) {
-  .contact-info {
-    flex-direction: column;
-    gap: 0.8rem;
-    width: 100%;
-  }
-  
-  .contact-button {
-    width: 100%;
-    justify-content: center;
-  }
+.email-button:hover {
+  background-color: #3c2774;
+  color: white;
+  box-shadow: 0 2px 8px rgba(60, 39, 116, 0.2);
 }
 
-/* Remove old button styles */
-.whatsapp-button,
-.email-button {
-  display: none;
+.email-button span {
+  color: inherit;
+}
+
+.phone {
+  color: #28a745;
+}
+
+.email {
+  color: #007bff;
 }
 
 /* Hero Section */
@@ -1010,6 +1012,17 @@ footer {
     flex-direction: column;
     gap: 1rem;
     text-align: center;
+  }
+  
+  .whatsapp-button {
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 0.5rem;
+  }
+  
+  .email-button {
+    width: 100%;
+    justify-content: center;
   }
   
   .logo-text h1 {
